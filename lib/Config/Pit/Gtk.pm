@@ -34,7 +34,7 @@ my $orig = Config::Pit->can('set');
 		);
 		my $tooltips = Gtk2::Tooltips->new;
 		my $sgroup = Gtk2::SizeGroup->new('horizontal');
-		for my $label_name (keys %{$setting}) {
+		for my $label_name (sort keys %{$setting}) {
 			if (ref(\$setting->{$label_name}) eq 'SCALAR') {
 				my $hbox = Gtk2::HBox->new;
 				my $label = Gtk2::Label->new($label_name);
