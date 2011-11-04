@@ -1,0 +1,7 @@
+Changes
+lib/Config/Pit/Gtk.pm
+Makefile.PL
+MANIFEST			This list of files
+MYMETA.json
+MYMETA.yml
+t/00_compile.t
